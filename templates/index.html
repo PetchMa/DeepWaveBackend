@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+
+	<!-- Start Head -->
+	<head>
+	
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="text" content="">
+		<meta name="author" content="">
+		
+		<!-- description -->
+        <meta name="description" content="">
+        <!-- keywords -->
+        <meta name="keywords" content="">
+		
+		
+		<!--Start Title -->
+		<title>DeepWave</title>
+		<!--End Title -->
+		
+		
+		
+		<!-- Start Favicon -->
+		<link rel="shortcut icon" href="static/favicon.ico">
+		<link rel="icon" href="favicon.ico" type="image/favicon.ico">
+        <link rel="apple-touch-icon" href="static/fav.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="static/favicon.ico">
+        <link rel="apple-touch-icon" sizes="114x114" href="static/favicon.ico">
+		<!-- END Favicon -->
+		
+		
+		
+
+		<!-- Uikit Framework -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='uikit.min.css') }}" />
+		
+		<!-- Bootstrap Framework -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}"/>
+		
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='font-awesome.min.css') }}">
+		
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}"/>
+		<!-- Responsive -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='responsive.css') }}"/>
+		
+		
+		
+		<!--[if lt IE 9]>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	
+	
+	</head>
+	<!-- End Head -->
+	
+
+	
+	<!-- Main Body -->
+	<body>
+		
+		<a href="javascript:" id="return-to-top"><span data-uk-icon="icon: arrow-up; ratio: 1" class="text-gray-extra-dark"></span></a>
+
+	
+		
+		<!-- Header Transparent -->
+		<div class="uk-position-top z-index-999">
+			
+			<!-- Header Options -->
+			<div class="navbar-dark" data-uk-sticky="animation: uk-animation-slide-top-small; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
+
+				<!-- Header Container -->
+				<nav class="uk-navbar-container uk-navbar-transparent" data-uk-navbar="boundary-align: true; align: center;">
+				
+					<!-- Navigation Left Side -->
+					<div class="uk-navbar-left padding-left-four-percent">
+					
+						<!-- Logo Image -->
+						<a class="uk-navbar-item uk-logo" href="index.html" data-uk-scroll><img src="static/logo-white.png" alt="" /></a>
+					
+					</div>
+					<!-- End Navigation Left Side -->
+					
+					
+					
+					<!-- Navigation Right Side -->
+					<div class="uk-navbar-right uk-dark padding-right-four-percent">
+
+						<!-- Links -->
+						<ul class="uk-navbar-nav text-weight-600">
+							
+							<!-- Off-Canvas Navigation Toggle -->
+							<li>
+							
+								<div class="uk-navbar-left uk-hidden@l">
+								
+									<a class="uk-navbar-toggle" data-uk-navbar-toggle-icon data-uk-toggle="target: #offcanvas-nav"></a>
+									
+								</div>
+							
+							</li>
+							<!-- End Off-Canvas Navigation Toggle -->
+							
+							
+							<!-- Link -->
+							<li>
+							
+								<a class="text-gray-extra-light text-extra-small uk-visible@l"  href="index.html">Home</a>
+								
+								<!-- Dropdown Container -->
+								
+								<!-- End Dropdown Container -->
+
+							</li>
+							<!-- End Link -->
+							
+							
+							<!-- Link -->
+							<li>
+							
+								<a class="text-gray-extra-light text-extra-small uk-visible@l" href="learn.html">Learn</a>
+								
+								<!-- Dropdown Container -->
+								
+								<!-- End Dropdown Container -->
+
+							</li>
+							<!-- End Link -->
+							<!-- Link -->
+							<li>
+							
+								<a class="text-gray-extra-light text-extra-small uk-visible@l" href="#">DeepWave Showcase</a>
+								
+								<!-- Dropdown Container -->
+								<div class="uk-navbar-dropdown uk-navbar-dropdown-width-1 bg-gray-extra-dark uk-light">
+								
+									<!-- Dropdown Grid -->
+									<div class="uk-navbar-dropdown-grid uk-child-width-1-1" data-uk-grid>
+									
+										<div>
+										
+											<!-- Dropdown Links -->
+											<ul class="uk-nav uk-navbar-dropdown-nav">
+												<li class="uk-nav-header text-small">Put It To The Test</li>
+												<li class="uk-nav-divider"></li>
+												<li><a href="DeepGalaxyDemo.html">Image Upsacaling Model</a></li>
+												<li><a href="DeepBrainDemo.html">EEG Denoiser Model</a></li>
+												
+											</ul>
+											<!-- End Dropdown Links -->
+											
+										</div>
+										
+									</div>
+									<!-- End Dropdown Grid -->
+									
+								</div>
+								<!-- End Dropdown Container -->
+
+							</li>
+							<!-- End Link -->
+							<!-- Link -->
+							<li>
+							
+								<a class="text-gray-extra-light text-extra-small uk-visible@l" href="research.html">Research</a>
+								
+								<!-- Dropdown Container -->
+								
+								<!-- End Dropdown Container -->
+
+							</li>
+							<!-- End Link -->
+							
+							<!-- Link -->
+							<li>
+							
+								<a class="text-gray-extra-light text-extra-small uk-visible@l" href="team.html">The Team</a>
+								
+								<!-- Dropdown Container -->
+								
+								<!-- End Dropdown Container -->
+
+							</li>
+							<!-- End Link -->
+							
+							
+							<!-- Link -->
+							<!-- End Link -->
+									
+							<li>
+							
+								<a class="uk-navbar-toggle" href="#modal-full4" data-uk-search-icon data-uk-toggle></a>
+								
+								<!-- Search Modal -->
+								<div id="modal-full4" class="uk-modal-full uk-modal" data-uk-modal>
+								
+									<div class="bg-black uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" data-uk-height-viewport>
+									
+										<button class="bg-black uk-modal-close-full" type="button" data-uk-close></button>
+										
+										<!-- Input Form -->
+										<form class="uk-search width-100 uk-search-large">
+										
+											<input class="uk-search-input text-uppercase text-weight-500 text-center letter-spacing-1" type="search" placeholder="Search">
+										
+										</form>
+										<!-- End Input Form -->
+										
+									</div>
+									
+								</div>
+								<!-- End Search Modal -->
+							
+							</li>
+							
+
+						</ul>
+						<!-- End Links -->
+						
+					</div>
+					<!-- End Navigation Right Side -->
+					
+				</nav>
+				<!-- End Header Container -->
+				
+			</div>
+			<!-- End Header Options -->
+		
+		</div>
+		<!-- End Header Transparent -->
+		
+
+		
+		
+		
+		
+		<!-- Off-Canvas Navigation -->
+		
+		<!-- End Off-Canvas Navigation -->
+		
+		
+	
+		<!-- Home -->
+		<div class="image-bg" data-uk-height-viewport>
+
+			<!-- Overlay -->
+			<div class="uk-overlay-primary-light uk-position-cover">
+			
+				<!-- Overlay Content -->
+				<div class="uk-position-center text-center">
+
+					<!-- Heading -->
+					<h2 class="text-weight-800 letter-spacing-15 text-white text-uppercase sm-letter-spacing-5">DeepWave</h2>
+					
+					<!-- Title -->
+					<h2 class="text-extra-large text-weight-700 text-white text-uppercase letter-spacing-18 word-spacing-5 sm-letter-spacing-5">AI For Good</h2>
+					
+					<!-- Separator -->
+					<div class="separator width-50px center-col bottom-border border-2px border-color-gray-regular margin-top-bottom-40px sm-width-30px"></div>
+					
+					<!-- Buttons -->
+					<a class="btn btn-medium btn-white border-radius-50 margin-right-10px sm-margin-left-right-auto sm-display-table sm-margin-bottom-10px" href="index.html">Our Works</a>
+
+					<a class="btn btn-medium btn-transparent-white border-radius-50 sm-display-table sm-margin-left-right-auto xs-no-margin-bottom" href="learn.html" data-uk-scroll>Learn More About Us</a>
+				</div>
+				<!-- Overlay Content -->
+		
+			</div>
+			<!-- End Overlay -->
+
+		</div>
+		<!-- End Home -->  
+        
+        
+        
+        <section class="service padding-style1" id="RL" style="static/style1.css">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service-header">
+                        <p class="title-small"></p>
+                        <h4 class="section-title"></h4>
+                        <p>   
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!---->
+                    <div class="service-header">
+                        <!--Start Service Single Item area-->
+                        <div > 
+                        </div>
+                        <!--End Service Single Item area-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        
+        
+        
+        
+     <section class="service padding-style1" id="RL" style="static/style1.css">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service-header">
+                        <p class="title-small"></p>
+                        <h4 class="text-weight-100 text-gray-extra-dark margin-bottom-35px">Welcome</h4>
+                        <p>DeepWave is a AI development project built to apply Deep Learning to solve real world problems. DeepWave encompasses various different branches of research in Deep Learning but is focused on using these tools to process <b>wave type data.</b> This includes, EEG waves, and Electromagnetic waves (image processing).   
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!---->
+                    <div class="service-header">
+                        <!--Start Service Single Item area-->
+                        <div > 
+                        <img src="static/world.gif" width ="400" height ="1000" >
+                        </div>
+                        <!--End Service Single Item area-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="service padding-style1" style="static/style1.css">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service-header">
+                        <img src="static/eye.gif" width ="400" height ="400" >
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!---->
+                    <div class="service-header">
+                        <!--Start Service Single Item area-->
+                       <p class="title-small"></p>
+                        <h4 class="text-weight-100 text-gray-extra-dark margin-bottom-35px">EEG Noise</h4>
+                        <p>One of the biggest setbacks in the development of Brain Computer Interfaces is noise. This noise caused by body movement and electronics interfere with the accuracy of these non-invasive devices. What if we can unlock that potential by using AI to clean the noise?  
+                        </p>
+                        <a class="btn btn-medium btn-white border-radius-50 margin-right-10px sm-margin-left-right-auto sm-display-table sm-margin-bottom-10px" href="DeepBrain.html">DeepNoise Clean</a>
+                        <!--End Service Single Item area-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+        
+        <section class="service padding-style1" id="RL" style="static/style1.css">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service-header">
+                        <p class="title-small"></p>
+                        <h4 class="section-title"></h4>
+                        <p>   
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!---->
+                    <div class="service-header">
+                        <!--Start Service Single Item area-->
+                        <div > 
+                        </div>
+                        <!--End Service Single Item area-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="service padding-style1" style="static/style1.css">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="service-header">
+                        <p class="title-small"></p>
+                        <h4 class="text-weight-100 text-gray-extra-dark margin-bottom-35px">Satellite Imaging </h4>
+                        <p>Our current modern technology can help us humans peer deep into galatic space millions of light years away. Yet the images we take can often lack detail. Can we train a AI model to upsample small images and insert detail in the images we take.   
+                        </p>
+                        <a class="btn btn-medium btn-white border-radius-50 margin-right-10px sm-margin-left-right-auto sm-display-table sm-margin-bottom-10px" href="DeepGalaxy.html">DeepGalaxy</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!---->
+                    <div class="service-header">
+                        <!--Start Service Single Item area-->
+                        <div > 
+                        <img src="static/solar.gif" width ="800" height ="800" >
+                        </div>
+                        <!--End Service Single Item area-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+		
+		
+		
+		<!-- Testimonial -->
+		<div data-uk-scrollspy="cls:uk-animation-fade" class="padding-top-bottom-150px">
+		
+			<!-- Container -->
+			<div class="container">
+			
+				<!-- Row -->
+				<div class="row" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: > div ; delay: 50; repeat: false">
+				
+					<!-- Column -->
+					<div class="col-md-8 col-sm-12 col-xs-12 center-col text-center margin-auto">
+						
+						<!-- Title -->
+						<div class="position-relative overflow-hidden width-70 padding-bottom-100px page-title-smaller margin-auto">
+						
+							<!-- Title -->
+							<h1 class="no-margin uk-heading-line uk-text-center"><span class="text-gray-extra-dark text-uppercase text-weight-700 letter-spacing-2">Explore</span></h1>
+						
+						</div>
+						<!-- End Title -->
+						
+					</div>
+					<!-- End Column -->
+				
+				</div>
+				<!-- End Row -->
+				<!-- Row -->
+				<div class="row">
+
+					<!-- Column -->
+					<div class="col-md-12 col-sm-12 col-xs-12 center-col text-center margin-auto">
+					
+						<!-- Carousel Container -->
+						<div data-uk-slider="finite: true">
+
+							<!-- Carousel Items -->
+							<ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@m uk-grid">
+							
+								<li>
+								
+									<!-- Testimonial -->
+									<div class="testimonial bg-gray-extra-light padding-top-bottom-70px all-border border-1px border-color-gray-extra-light uk-box-shadow-medium">
+
+										<!-- Image -->
+										<div class="width-100px text-center center-col margin-bottom-25px">
+										
+											<img class="border-radius-100-percent" src="static/avatars/bulb%20(2).jpg" alt="" />
+											
+										</div>
+										<!-- End Image -->
+										
+										<!-- Icon -->
+										
+
+										<!-- Text -->
+										<p class="margin-top-25px center-col width-70">Learn about the technology and the methods we used to create the model. Explore with visuals that show case our work at its best.</p>
+										
+										<div class="separator center-col width-10 bottom-border border-1px border-color-gray-extra-dark margin-top-bottom-20px"></div>
+										
+										<p class="montserrat text-gray-extra-dark text-uppercase text-weight-600 text-small letter-spacing-1 margin-bottom-5px"></p>
+
+										<p class="text-gray-dark text-uppercase text-weight-500 text-extra-small margin-bottom-5px"></p>
+										
+										<p class="text-gray-regular text-weight-500 text-extra-small no-margin-bottom"><a class="btn btn-large btn-gray-extra-dark border-radius-5 md-margin-bottom-15px sm-margin-left-right-auto sm-display-table" href="learn.html">LEARN</a></p>
+										<!-- End Text -->
+										
+									</div>
+									<!-- End Testimonial -->
+
+								</li>
+								
+								<li>
+									<!-- Testimonial -->
+									<div class="testimonial bg-gray-extra-light padding-top-bottom-70px all-border border-1px border-color-gray-extra-light uk-box-shadow-medium">
+
+										<!-- Image -->
+										<div class="width-100px text-center center-col margin-bottom-25px">
+										
+											<img class="border-radius-100-percent" src="static/avatars/brain%20(2).jpg" alt="" />
+											
+										</div>
+										<!-- End Image -->
+										
+										<!-- Icon -->
+										
+
+										<!-- Text -->
+										<p class="margin-top-25px center-col width-70">Interact with the models built. Test and see how our product works yourself. Our models are portotype in development.</p>
+										
+										<div class="separator center-col width-10 bottom-border border-1px border-color-gray-extra-dark margin-top-bottom-20px"></div>
+										
+										<p class="montserrat text-gray-extra-dark text-uppercase text-weight-600 text-small letter-spacing-1 margin-bottom-5px"></p>
+
+										<p class="text-gray-dark text-uppercase text-weight-500 text-extra-small margin-bottom-5px"></p>
+										
+										<p class="text-gray-regular text-weight-500 text-extra-small no-margin-bottom"><a class="btn btn-large btn-gray-extra-dark border-radius-5 md-margin-bottom-15px sm-margin-left-right-auto sm-display-table" href="DeepBrain.html">Test Drive</a></p>
+										<!-- End Text -->
+										
+									</div>
+									<!-- End Testimonial -->
+									
+								</li>
+								
+								<li>
+									<!-- Testimonial -->
+									<div class="testimonial bg-gray-extra-light padding-top-bottom-70px all-border border-1px border-color-gray-extra-light uk-box-shadow-medium">
+
+										<!-- Image -->
+										<div class="width-100px text-center center-col margin-bottom-25px">
+										
+											<img class="border-radius-100-percent" src="static/avatars/gear.jpg" alt="" />
+											
+										</div>
+										<!-- End Image -->
+										
+										<!-- Icon -->
+										
+
+										<!-- Text -->
+										<p class="margin-top-25px center-col width-70">All our work is open source. Find resources to all our development on our github and checkout our short summary on the design process. </p>
+										
+										<div class="separator center-col width-10 bottom-border border-1px border-color-gray-extra-dark margin-top-bottom-20px"></div>
+										
+										<p class="montserrat text-gray-extra-dark text-uppercase text-weight-600 text-small letter-spacing-1 margin-bottom-5px"></p>
+
+										<p class="text-gray-dark text-uppercase text-weight-500 text-extra-small margin-bottom-5px"></p>
+										
+										<p class="text-gray-regular text-weight-500 text-extra-small no-margin-bottom"><a class="btn btn-large btn-gray-extra-dark border-radius-5 md-margin-bottom-15px sm-margin-left-right-auto sm-display-table" href="research.html">Research</a></p>
+										<!-- End Text -->
+										
+									</div>
+									<!-- End Testimonial -->
+									
+								</li>
+				
+
+							</ul>
+							<!-- End Carousel Items -->
+							
+							
+							<!-- Carousel Navigation -->
+							<a class="uk-position-center-left uk-position-small uk-hidden-hover left-minus-50" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+							<a class="uk-position-center-right uk-position-small uk-hidden-hover right-minus-50" href="#" data-uk-slidenav-next data-uk-slider-item="next"></a>
+
+						</div>
+						<!-- End Carousel Container -->
+
+					</div>
+					<!-- End Column -->
+
+				</div>
+				<!-- End Row -->
+	
+			</div>
+			<!-- End Container -->
+
+		</div>
+		<!-- End Testimonial -->
+		
+		
+		
+		
+		
+		
+		
+		<!-- Footer Detailed 4 Colums -->
+		<footer data-uk-scrollspy="cls:uk-animation-fade">
+		
+			
+			<!-- Row -->
+			<div class="row bg-gray-extra-dark padding-left-right-twelve-percent padding-top-bottom-80px">
+				
+				<!-- Column -->
+				<div class="col-md-3 col-sm-6 col-xs-12 md-margin-bottom-50px sm-text-center">
+				
+					<!-- Logo Image -->
+					<a href="#" class="margin-bottom-25px display-inline-block" data-uk-scroll><img src="static/logo-white.png" alt="" /></a>
+					
+					<!-- Text -->
+					<p class="margin-bottom-25px text-small text-weight-400 width-90 md-width-100 text-gray-light">Project built on Google Cloud Frame work. If interested in our work, feel free to contact us. </p>					
+					
+					<!-- Links -->
+					<a class="text-small text-weight-400 text-gray-light right-border border-1 border-color-regular-gray padding-right-10px" href="#">Terms & Conditions</a>
+					<a class="text-small text-weight-400 text-gray-light padding-left-10px" href="#">Privacy Policy</a>
+					
+				</div>
+				<!-- End Column -->
+				
+				
+				<!-- Column -->
+				<div class="col-md-3 col-sm-6 col-xs-12 left-border border-color-gray-dark padding-left-35px md-margin-bottom-50px sm-text-center xs-no-border-left xs-no-padding-left">
+				
+					<!-- Title -->
+					<h5 class="text-small text-weight-700 text-uppercase text-white letter-spacing-2">Learn More</h5>
+					
+					<!-- Links -->
+					<ul class="list-unstyled no-margin-bottom">
+					
+						<li><a class="text-small text-gray-light" href="index.html">Home</a></li>
+						<li><a class="text-small text-gray-light" href="learn.html">Projects</a></li>
+						<li><a class="text-small text-gray-light" href="team.html">Team</a></li>
+
+					
+					</ul>
+					<!-- End Links -->
+					
+				</div>
+				<!-- End Column -->
+			
+			
+				<!-- Column -->
+				<div class="col-md-3 col-sm-6 col-xs-12 left-border border-color-gray-dark padding-left-35px sm-text-center sm-no-border-left xs-no-padding-left xs-margin-bottom-50px">
+				
+					<!-- Title -->
+					<h5 class="text-small text-weight-700 text-uppercase text-white letter-spacing-2">Contact</h5>
+
+					<!-- Text -->
+					<p class="margin-bottom-25px text-small text-gray-light width-90 md-width-100">Sultan St, Toronto, ON
+</p>
+					
+					<!-- Links -->
+					<ul class="list-unstyled no-margin-bottom">
+				
+						<li class="margin-bottom-15px"><i class="far fa-envelope margin-right-10px"></i> <a class="text-small text-gray-light" href="#">peterxiangyuanma@gmail.com</a></li>
+						<li class="margin-bottom-15px"><i class="far fa-envelope margin-right-10px"></i> <a class="text-small text-gray-light" href="#">albertlai631@outlook.com</a></li>
+						<li><i class="fas fa-phone margin-right-10px"></i> <a class="text-small text-gray-light" href="#">--- --- ----</a></li>
+				
+					</ul>
+					<!-- End Links -->
+					
+				</div>
+				<!-- End Column -->
+				
+				
+				
+				<!-- Column -->
+				<div class="col-md-3 col-sm-6 col-xs-12 left-border border-color-gray-dark padding-left-35px padding-bottom-10px md-no-border-right sm-text-center xs-no-border-left xs-no-padding-left xs-no-padding-bottom">
+				
+					<!-- Title -->
+					<h5 class="text-small text-weight-700 text-uppercase text-white letter-spacing-2">Maps</h5>
+					
+					<!-- Grid for Gallery in Footer -->
+					<img src="static/maps.PNG" width ="800" height ="800" >
+					<!-- End Grid for Gallery in Footer -->
+					
+				</div>
+				<!-- End Column -->
+			
+			</div>
+			<!-- End Row -->
+			
+			
+			<!-- Row -->
+			<div class="row bg-black padding-top-bottom-50px padding-left-right-twelve-percent">
+				
+				<!-- Column -->
+				<div class="col-md-8 col-sm-12 col-xs-12">
+				
+					<!-- Text / Copyright -->
+					<p class="no-margin-bottom text-small text-gray-light text-weight-400 sm-text-center sm-margin-bottom-20px">Copyright © 2019 of <a href="https://www.fourtabs.com" target="_blank" class="text-white">DeepWave.</a> All rights reserved.</p>
+				
+				</div>
+				<!-- End Column -->
+				
+				<!-- Column -->
+				<div class="col-md-4 col-sm-12 col-xs-12">
+				
+					<!-- Social Links for Footer -->
+					<ul class="list-unstyled text-right no-margin-bottom sm-text-center">
+					
+						<li class="display-inline-block margin-right-25px"><a class="text-medium text-weight-700 text-gray-light" href="#"><i class="fab fa-facebook"></i></a></li>
+						<li class="display-inline-block margin-right-25px"><a class="text-medium text-weight-700 text-gray-light" href="#"><i class="fab fa-twitter"></i></a></li>
+						<li class="display-inline-block margin-right-25px"><a class="text-medium text-weight-700 text-gray-light" href="#"><i class="fab fa-behance"></i></a></li>
+						<li class="display-inline-block margin-right-25px"><a class="text-medium text-weight-700 text-gray-light" href="#"><i class="fab fa-dribbble"></i></a></li>
+						<li class="display-inline-block"><a class="text-medium text-weight-700 text-gray-light" href="#" data-uk-scroll data-uk-tooltip="title: Go to top; pos: right"><i class="far fa-arrow-alt-circle-up"></i></a></li>
+					
+					</ul>
+					<!-- End Social Links for Footer -->
+				
+				</div>
+				<!-- End Column -->
+			
+			</div>
+			<!-- End Row -->
+			
+		</footer>
+		<!-- End Footer -->
+		
+		
+		
+		<!-- jQuery Library -->
+		<script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+		
+		<!-- Uikit Framework -->
+        <script src="{{ url_for('static', filename='uikit.min.js') }}"></script>
+		
+		<!-- Uikit Icons -->
+         <script src="{{ url_for('static', filename='uikit-icons.min.js') }}"></script>
+		
+		<!-- Bootstrap Framework -->
+         <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+
+		
+		<!-- Modernizr -->
+         <script src="{{ url_for('static', filename='modernizr.js') }}"></script>
+		
+		<!-- Easing -->
+         <script src="{{ url_for('static', filename='jquery.easing.1.3.js') }}"></script>
+
+		<!-- Font Awesome -->
+         <script src="{{ url_for('static', filename='font-awesome.min.js') }}"></script>
+		<script src="static/font-awesome.min.js"></script>
+		
+		<!-- Pie Charts -->
+        <script src="{{ url_for('static', filename='jquery.easypiechart.min.js') }}"></script>
+
+		
+		<!-- Contact Form Validation -->
+         <script src="{{ url_for('static', filename='contact.js') }}"></script>
+		
+		
+		<!-- Counter -->
+		<script src="{{ url_for('static', filename='jquery.countTo.js') }}"></script>
+		<!-- Counter Loader -->
+		<script src="{{ url_for('static', filename='jquery.appear.js') }}"></script>
+		<!-- Retina Ready -->
+
+        <script src="{{ url_for('static', filename='retina.min.js') }}"></script>
+		<!-- Custom Scripts -->
+
+        <script src="{{ url_for('static', filename='custom.js') }}"></script>
+	
+	</body>
+
+</html>
