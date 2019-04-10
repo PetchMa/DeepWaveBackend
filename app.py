@@ -50,8 +50,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # HTML_TEMPLATE = Template('/DeepGalaxyDemo.html')
 
-def debug():
-	print('-------------------------------------------------------------------------')
+
 
 @app.route('/')
 def index():
@@ -97,31 +96,31 @@ def page_not_found(e):
 
 @app.route('/denoise/learn.html')
 def denoiselearn():
-	print('NEWWWWWWWWWWWWWWWWWWWWWWWWWWWWW')
+	
 	return redirect(url_for('learn'))
 @app.route('/denoise/DeepGalaxy.html')
 def denoiseDeepGalaxy():
-	print('NEWWWWWWWWWWWWWWWWWWWWWWWWWWWWW')
+	
 	#render out pre-built HTML file right on the index page
 	return redirect(url_for('DeepGalaxy'))
 @app.route('/denoise/DeepGalaxyDemo.html')
 def denoiseDeepGalaxyDemo(filename="", cleaned_path="", error=""):
-	print('NEWWWWWWWWWWWWWWWWWWWWWWWWWWWWW')
+	
 	#render out pre-built HTML file right on the index page
 	return redirect(url_for('DeepGalaxyDemo'))
 @app.route('/denoise/research.html')
 def denoiseresearch():
-	print('NEWWWWWWWWWWWWWWWWWWWWWWWWWWWWW')
+	
 	#render out pre-built HTML file right on the index page
 	return redirect(url_for('research'))
 @app.route('/denoise/team.html')
 def denoiseteam():
-	print('NEWWWWWWWWWWWWWWWWWWWWWWWWWWWWW')
+	
 	#render out pre-built HTML file right on the index page
 	return redirect(url_for('team'))
 @app.route('/denoise/index.html')
 def denoisehome():
-	print('NEWWWWWWWWWWWWWWWWWWWWWWWWWWWWW')
+	
 	#render out pre-built HTML file right on the index page
 	return redirect(url_for('home'))
 
@@ -131,9 +130,9 @@ def upload_file():
 	if request.method == 'POST':
 		try:
 			f = request.files['file']
-			print('1')
+			
 			# f = base64.b64decode(f)
-			print('a')
+			
 			f.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(f.filename)))
 			return render_template('DeepGalaxyDemo.html', filename=f.filename)
 		except Exception as e:
@@ -173,47 +172,39 @@ def denoise(filename):
 	try:	
 		img = 0
 		debug()
-		print('It has begun')
+		
 		debug()
 		imgData = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-		print('check')
-		print(type(imgData))
-		print(type(imgData)) 
-		print('New Part Works')
+		
 		debug()
-		print(imgData)
-		print('Data transfered')
+		
 		x = cv2.imread(imgData)
-		print(type(x))
-		print('New cv2 Worked')
+		
 		x = cv2.resize(x,(25,25))
 		debug()
 		x = x.astype('float32')
-		print('Image is float 32')
-		print(type(x))
+		
 		x /= 255
-		print('it worked')
+		
 		x = np.expand_dims(x, axis=0)
-		print('scaled it down')
+		
 		num = x[0,5,24,2]*10
-		print(num)
+		
 		debug()
 		with graph.as_default():
 			img = model.predict(x)
 			img = img [0, : , :, :]
 			debug()
-			print('model works')
-			print (np.argmax(img,axis=1))
+
 			cleaned_path = UPLOAD_FOLDER + 'cleaned-' + filename
 			debug()
-			print(img.shape)
+		
 			img =(img * 255).astype(np.uint8)
-			print(type(img))
-			print(img)
+
 			debug()
-			print('convertimage worked')
+
 			Image.fromarray(img).save(cleaned_path)
-			print('SAVED image')
+
 			return render_template('DeepGalaxyDemo.html',  filename=filename, cleaned_path='cleaned-'+filename )
 	except Exception as e:
 		return render_template('DeepGalaxyDemo.html', error=e)
